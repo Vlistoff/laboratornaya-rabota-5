@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>  
+</head>
+<body>
+    <form>
+        <input type="text" id="number" value="" readonly>
+        <button type="button" onclick="GetValue()">Click!</button>
+    </form>
+    <script>
+        function GetValue (){
+           return document.getElementById("number").value = Math.floor(Math.random() * (10 - 1)) + 1;
+        }
+    </script>
+</body>
+</html>
