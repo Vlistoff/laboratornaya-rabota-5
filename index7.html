@@ -66,10 +66,28 @@
       }
       if (victory()){
         alert("Zeroes' victory!");
+        document.getElementById('cell1').innerHTML = '';
+        document.getElementById('cell2').innerHTML = '';
+        document.getElementById('cell3').innerHTML = '';
+        document.getElementById('cell4').innerHTML = '';
+        document.getElementById('cell5').innerHTML = '';
+        document.getElementById('cell6').innerHTML = '';
+        document.getElementById('cell7').innerHTML = '';
+        document.getElementById('cell8').innerHTML = '';
+        document.getElementById('cell9').innerHTML = '';
         return 0;
       }
       if (cells.length == 0){
         alert('Draw!');
+        document.getElementById('cell1').innerHTML = '';
+        document.getElementById('cell2').innerHTML = '';
+        document.getElementById('cell3').innerHTML = '';
+        document.getElementById('cell4').innerHTML = '';
+        document.getElementById('cell5').innerHTML = '';
+        document.getElementById('cell6').innerHTML = '';
+        document.getElementById('cell7').innerHTML = '';
+        document.getElementById('cell8').innerHTML = '';
+        document.getElementById('cell9').innerHTML = '';
         return 0;
       }
 
