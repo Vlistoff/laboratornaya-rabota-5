@@ -10,7 +10,7 @@
     td {
       width: 40px;
       height: 40px;
-      border: 2px solid black;
+      border: 2px solid rgb(41, 41, 41);
       text-align: center;
       font-size: 30px;
       cursor: pointer;
@@ -40,7 +40,7 @@
        <td id= "cell9" onclick="check('cell9')"></td>
      </tr>
    </table>
-   <button id="clr" onclick="location.reload(true)">Clear the Board</button>
+   <button id="clr" onclick="location.reload(true)">Clear Board</button>
    <div id="step">O turn</div>
   <script>
     let cells = ['cell1', 'cell2', 'cell3', 'cell4', 'cell5', 'cell6', 'cell7', 'cell8', 'cell9'];
@@ -78,11 +78,19 @@
 
       if (victory()) {
         alert("Crosses' victory!");
+        document.getElementById('cell1').innerHTML = '';
+        document.getElementById('cell2').innerHTML = '';
+        document.getElementById('cell3').innerHTML = '';
+        document.getElementById('cell4').innerHTML = '';
+        document.getElementById('cell5').innerHTML = '';
+        document.getElementById('cell6').innerHTML = '';
+        document.getElementById('cell7').innerHTML = '';
+        document.getElementById('cell8').innerHTML = '';
+        document.getElementById('cell9').innerHTML = '';
         return 0;
       }
 
     }
-
 
 
     function victory() {
